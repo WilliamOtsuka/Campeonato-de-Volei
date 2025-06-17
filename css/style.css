@@ -1,0 +1,277 @@
+:root {
+    --primary-color: #586fd1;
+    --secundary-color: #004aad;
+    --form-bg: #16213a;
+    --form-radius: 16px;
+    --form-shadow: 0 8px 32px #00000017;
+    --form-border: 3px solid var(--primary-color);
+    --input-border: 2px solid var(--secundary-color);
+    --input-border-focus: var(--primary-color);
+    --btn-bg: var(--primary-color);
+    --btn-bg-hover: var(--secundary-color);
+    --btn: #fff;
+    --btn-hover: #fff;
+}
+
+.login-body {
+    background: #0a192f;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    background: var(--form-bg);
+    padding: 2.5rem 2rem;
+    border-radius: var(--form-radius);
+    box-shadow: var(--form-shadow);
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+}
+
+.login-title {
+    text-align: center;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.login-label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-input {
+    padding: 0.7rem;
+    border: var(--input-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    color: #d4d4d4;
+    background-color: #41414177;
+}
+
+.login-input:focus {
+    border-color: var(--input-border-focus);
+}
+
+.login-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem;
+    background: var(--btn-bg);
+    color: var(--btn);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.login-btn:hover {
+    background: var(--btn-bg-hover);
+    color: var(--btn-hover);
+}
+
+.nav-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background: #021d57;
+    padding: 0;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px #0002;
+    display: flex;
+    justify-content: end;
+    align-items: stretch;
+    height: 50px;
+
+}
+
+.nav-list-home {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    align-items: stretch;
+}
+
+.link-nav {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+    transition: background 0.2s, color 0.2s;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.link-nav:hover {
+    background: var(--secundary-color);
+}
+
+.body-home {
+    background: #0a192f;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+}
+
+.main-home {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title-home {
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.text-home {
+    color: #d4d4d4;
+    font-size: 1.1rem;
+}
+
+.footer-home {
+    text-align: center;
+    color: #fff;
+    margin-top: 2rem;
+    opacity: 0.8;
+}
+
+.form-cadastro {
+    background: var(--form-bg);
+    padding: 2.5rem 2rem;
+    border-radius: var(--form-radius);
+    box-shadow: var(--form-shadow);
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    margin: 0 auto 2rem auto;
+    border: var(--form-border);
+    gap: 1rem;
+}
+
+.label-cadastro {
+    color: var(--primary-color);
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    letter-spacing: 1px;
+}
+
+.input-cadastro {
+    padding: 0.7rem;
+    border: var(--input-border);
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border 0.2s;
+    color: #d4d4d4;
+    background-color: #41414177;
+}
+
+.input-cadastro:focus {
+    border-color: var(--input-border-focus);
+}
+
+.btn-cadastro {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background: var(--btn-bg);
+    color: var(--btn);
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn-cadastro:hover {
+    background: var(--btn-bg-hover);
+    color: var(--btn-hover);
+}
+
+.titulo-equipes {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.lista-equipes {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2rem auto;
+    max-width: 500px;
+}
+
+.item-equipe {
+    background: #1a2747;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1.05rem;
+}
+
+.nome-equipe {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.treinador-equipe,
+.telefone-treinador {
+    color: #d4d4d4;
+    font-size: 0.98rem;
+}
+
+.links-equipes {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.link-voltar-cadastro,
+.link-menu-sistema {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: color 0.2s;
+}
+
+.link-voltar-cadastro:hover,
+.link-menu-sistema:hover {
+    color: var(--secundary-color);
+    text-decoration: underline;
+}
