@@ -49,6 +49,7 @@ app.get('/', (req, res) => {
       </html>
 `
   )
+  res.end()
 })
 
 
