@@ -3,6 +3,7 @@ import session from 'express-session'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import cookieParser from 'cookie-parser'
+import vercel from '@vercel/node'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -17,7 +18,7 @@ app.use(session({
   cookie: {
     maxAge: 30 * 60 * 1000, // 30 minutos
     httpOnly: true,
-    secure: false
+    secure: true
   }
 }))
 app.use('/css', express.static(path.join(__dirname, 'css')))
