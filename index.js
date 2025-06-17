@@ -432,6 +432,6 @@ function formatarData(data) {
   return `${dia}/${mes}/${ano}`
 }
 
-app.listen(3000, () => {
+app.listen(3000, function () {
   console.log('Servidor rodando em http://localhost:3000');
 })
