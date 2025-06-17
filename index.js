@@ -15,9 +15,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true,
   cookie: {
-    maxAge: 30 * 60 * 1000, // 30 minutos
-    httpOnly: true,
-    secure: false
+    maxAge: 30 * 60 * 1000 // 30 minutos
   }
 }))
 app.use('/css', express.static(path.join(__dirname, 'css')))
